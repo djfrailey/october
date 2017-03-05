@@ -4,6 +4,7 @@
  * The plugin.php file (called the plugin initialization script) defines the plugin information class.
  */
 
+use Backend;
 use System\Classes\PluginBase;
 
 class Plugin extends PluginBase
@@ -16,6 +17,16 @@ class Plugin extends PluginBase
             'description' => 'Provides features used by the provided demonstration theme.',
             'author'      => 'Alexey Bobkov, Samuel Georges',
             'icon'        => 'icon-leaf'
+        ];
+    }
+
+    public function registerNavigation()
+    {
+        return [
+            "dropdowns" => [
+                "label" => "Dropdowns",
+                "url" => Backend::url("october/demo/dropdowns")
+            ]
         ];
     }
 

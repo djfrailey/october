@@ -1,1 +1,6 @@
-1.0.1: First version of Demo
+1.0.1: 
+  - First version of Demo
+1.0.2:
+  - Added dropdown table.
+  - create_dropdowns_table.php
+  - dropdown_seeder.php

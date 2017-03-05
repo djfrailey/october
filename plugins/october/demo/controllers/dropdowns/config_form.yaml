@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Dropdown
+
+# Model Form Field configuration
+form: $/october/demo/models/dropdown/fields.yaml
+
+# Model Class name
+modelClass: October\Demo\Models\Dropdown
+
+# Default redirect location
+defaultRedirect: october/demo/dropdowns
+
+# Create page
+create:
+    title: Create Dropdown
+    redirect: october/demo/dropdowns/update/:id
+    redirectClose: october/demo/dropdowns
+
+# Update page
+update:
+    title: Edit Dropdown
+    redirect: october/demo/dropdowns
+    redirectClose: october/demo/dropdowns
+
+# Preview page
+preview:
+    title: Preview Dropdown

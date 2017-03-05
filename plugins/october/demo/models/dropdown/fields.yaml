@@ -1,0 +1,74 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    title:
+      label: Super Awesome Placeholder Title
+    section[one]:
+      type: section
+      label: Normal Dropdown - Array Based Options
+    a:
+      type: dropdown
+      emptyOption: "-- Choose One --"
+      options:
+        - One
+        - Two
+        - Three
+        - Four
+        - Five
+        - Six
+        - Seven
+        - Eight
+        - Nine
+        - Ten
+    section[two]:
+      type: section
+      label: Normal Dropdown - Model Method Based Options
+    b:
+      type: dropdown
+      emptyOption: "-- Choose One --"
+    section[three]:
+      type: section
+      label: Normal Dropdown - Query Based Options
+    c:
+      type: dropdown
+      emptyOption: "-- Choose One --"
+      options: October\Demo\Models\Dropdown
+      optionsOrderBy:
+        title: DESC
+    section[four]:
+      type: section
+      label: Ajax Dropdown - Array Based Options
+    d:
+      type: dropdown
+      emptyOption: "-- Choose One --"
+      mode: ajax
+      options:
+        - One
+        - Two
+        - Three
+        - Four
+        - Five
+        - Six
+        - Seven
+        - Eight
+        - Nine
+        - Ten
+    section[five]:
+      type: section
+      label: Ajax Dropdown - Model Method Based Options
+    e:
+      type: dropdown
+      emptyOption: "-- Choose One --"
+      mode: ajax
+    section[six]:
+      type: section
+      label: Ajax Dropdown - Query Based Options
+    f:
+      type: dropdown
+      emptyOption: "-- Choose One --"
+      mode: ajax
+      options: October\Demo\Models\Dropdown
+      optionsOrderBy:
+        title: DESC
