@@ -163,6 +163,7 @@ class ServiceProvider extends ModuleServiceProvider
             $manager->registerFormWidget('Backend\FormWidgets\RecordFinder', 'recordfinder');
             $manager->registerFormWidget('Backend\FormWidgets\Repeater', 'repeater');
             $manager->registerFormWidget('Backend\FormWidgets\TagList', 'taglist');
+            $manager->registerFormWidget('Backend\FormWidgets\Dropdown', 'dropdown');
         });
     }
 
